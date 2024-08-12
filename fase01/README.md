@@ -37,4 +37,4 @@ Concluimos ser o XGBoost Regressor o melhor modelo tanto do ponto de vista de R�
 
 Teste realizado realizado mostra que o resultado ficou dentro do esperado considerando gráficos de dispersão.
 
-![](fase01/analise_grafica/Avaliação_Grafica_Modelo_Selecionado.png)
+![](analise_grafica/Avaliação_Grafica_Modelo_Selecionado.png)
