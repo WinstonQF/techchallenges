@@ -68,7 +68,7 @@ Para o GPT4 temos o seguinte:
 
 - Custo Operacional e flexibilidade
   - O LLaMA processou 5000 exemplos no mesmo intervalo de tempo que o GPT-4 processou 1500, ambos completando o treinamento em até 20 minutos. Considerando que o GPT-4 realiza todo o processo via API, podemos afirmar que ambos apresentaram um desempenho satisfatório em termos de tempo de resposta.
-  - O LLaMA rodou no Colab sem custos adicionais enquanto no GPT4 foi pago 3 dólares para treinar e rodar testes do modelo.
+  - O LLaMA para rodar mais rápido foi necessário aquisião de créditos e no GPT4 foi pago 3 dólares para treinar e rodar testes do modelo.
   - Ambos modelos conseguiram mesclar pré-treino com os novos dados e gerar novas saídas.
 
 
