@@ -9,6 +9,7 @@ Este projeto teve como objetivo realizar o fine-tuning de diferentes foundation 
 - [x] colab: Arquivos fontes para serem utilizados no colab.
 - [x] dados: Arquivos de treinamento já no formato do foundation model.
 - [x] resultados: Planilha contendo os testes comparativos realizados
+- [x] imagens: Gráficos de apoio desse documento
 
 ## Etapas do Projeto:
 ### Preparação dos dados
@@ -60,7 +61,16 @@ Para o GPT4 temos o seguinte:
 
 ![](imagens/treinamento_gpt4.png) 
 
-### Configuração do fine-tuning
-
-
 ### Resultados
+- Precisão e eficiência no treinamento
+  - Em alguns casos, o LLaMA gerou respostas genéricas, como "I have reviewed this book", possivelmente indicando uma lacuna nos dados pré-treinados. Ainda assim, o modelo apresentou ganhos mais significativos em comparação ao GPT-4 em determinados cenários.
+  - O gpt-4o-mini-2024-07-18, utilizado neste fine-tuning, incorporou adequadamente o treinamento e começou a produzir respostas mais contextualizadas. Contudo, a baixa qualidade de alguns dados no conjunto de treinamento impactou negativamente a clareza das respostas, gerando problemas como falhas na construção de conjunções e advérbios. Isso resultou em textos por vezes confusos e pouco coerentes.
+
+- Custo Operacional e flexibilidade
+  - O LLaMA processou 5000 exemplos no mesmo intervalo de tempo que o GPT-4 processou 1500, ambos completando o treinamento em até 20 minutos. Considerando que o GPT-4 realiza todo o processo via API, podemos afirmar que ambos apresentaram um desempenho satisfatório em termos de tempo de resposta.
+  - O LLaMA rodou no Colab sem custos adicionais enquanto no GPT4 foi pago 3 dólares para treinar e rodar testes do modelo.
+  - Ambos modelos conseguiram mesclar pré-treino com os novos dados e gerar novas saídas.
+
+
+
+
