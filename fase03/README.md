@@ -27,10 +27,7 @@ A curadoria dos dados foi realizada com base nos seguintes critérios:
 > [!NOTE]
 > Em especial para o treinamento do GPT4 foi necessário considerar a quantidade máxima de tokens, por isso o filtro de até 256 tokens.
 
-![](imagens/visao_geral_tokens.png)
-![](imagens/exemplos_max_256_tokens.png.png)
-
-
+![](imagens/visao_geral_tokens.png) | ![](imagens/exemplos_max_256_tokens.png)
 
 Com essas melhorias na seleção dos dados, buscou-se criar um conjunto de treinamento mais consistente e representativo, aumentando as chances de sucesso nos modelos subsequentes.
 
