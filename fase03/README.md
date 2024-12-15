@@ -27,13 +27,40 @@ A curadoria dos dados foi realizada com base nos seguintes critérios:
 > [!NOTE]
 > Em especial para o treinamento do GPT4 foi necessário considerar a quantidade máxima de tokens, por isso o filtro de até 256 tokens.
 
-![](imagens/visao_geral_tokens.png) | ![](imagens/exemplos_max_256_tokens.png)
+![](imagens/visao_geral_tokens.png) 
+![](imagens/exemplos_max_256_tokens.png)
 
 Com essas melhorias na seleção dos dados, buscou-se criar um conjunto de treinamento mais consistente e representativo, aumentando as chances de sucesso nos modelos subsequentes.
 
-
-
-
 ### Comparação das estruturas dos dados de treinamento
+Um arquivo de treinamento típico para o LLaMA pode estar em formato JSON Lines (JSONL) ou outro formato serializável, onde cada exemplo de treinamento tem a seguinte estrutura:
+
+- instruction:
+        A instrução principal que orienta o modelo sobre o que ele deve fazer.
+        Exemplo: "Resuma o seguinte texto."
+
+- input:
+        O contexto ou os dados específicos associados à instrução. Pode estar vazio ("") se a instrução for autoexplicativa.
+        Exemplo: "O texto descreve a ascensão de Napoleão ao poder durante a Revolução Francesa."
+
+- output:
+        A resposta esperada do modelo, que é gerada com base na instrução e no contexto fornecido.
+        Exemplo: "Napoleão subiu ao poder durante a Revolução Francesa devido à sua habilidade militar e alianças políticas."
+
+![](imagens/treinamento_llama3.png) 
+
+
+Para o GPT4 temos o seguinte:
+
+- role: Define o papel do participante na interação. Pode ser:
+  - system: Define as regras ou o contexto geral da conversa.
+  - user: Representa a entrada do usuário.
+  - assistant: Contém a resposta esperada do modelo.
+- content: O texto associado ao papel (role).
+
+![](imagens/treinamento_gpt4.png) 
+
 ### Configuração do fine-tuning
+
+
 ### Resultados
