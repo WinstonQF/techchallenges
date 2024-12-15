@@ -21,9 +21,10 @@ A curadoria dos dados foi realizada com base nos seguintes critérios:
 - Filtro por Palavras-Chave: Manutenção de linhas que contivessem as palavras "copyright" ou "author" em **Title** ou **Content**.
 - Divisão do Conjunto de Dados: Uso das primeiras 1500 linhas para treinamento e das 500 linhas subsequentes para teste.
 - Critérios de Tamanho: Seleção de linhas em que:
-- Title contivesse mais de 40 caracteres.
+  - Title contivesse mais de 40 caracteres.
   - Content contivesse mais de 400 caracteres.
-  - Com essas melhorias na seleção dos dados, buscou-se criar um conjunto de treinamento mais consistente e representativo, aumentando as chances de sucesso nos modelos subsequentes.
+
+Com essas melhorias na seleção dos dados, buscou-se criar um conjunto de treinamento mais consistente e representativo, aumentando as chances de sucesso nos modelos subsequentes.
 
 
 ### Comparação das estruturas dos dados de treinamento
