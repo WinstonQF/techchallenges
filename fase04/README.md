@@ -8,6 +8,7 @@ Este projeto tem como objetivo realizar a análise de um vídeo para:
 ## Estrutura de pastas e conteúdos
 - [x] arquivo main.py na pasta raiz contendo todo código do projeto
 - [x] dados/in: Vídeos utilizados no processo de análise.
+- [x] dados/out: Vídeos processados contendo resultados analizados.
 - [x] resultados: Captura de imagens de frames para análise de qualidade do algoritmo.
 
 ## Principais Parâmetros
@@ -60,36 +61,50 @@ Este projeto tem como objetivo realizar a análise de um vídeo para:
    - Ao final, o script mostra no console as informações de cada pessoa (quantos indivíduos totais, atividades mais frequentes, quantas trocas bruscas de emoção etc.).
 
 
-## Resultado
+## Resultados
 
-### Saída final
+### Reconhecimento Facial (Curiosidade)
 
+Nosso algoritmo sugeriu que a pessoa que apareceu fazendo careta em uma cena poderia ser a mesma vista em outra cena, porém sem óculos. Após análise supervisionada, o grupo concluiu que, de fato, se tratava do mesmo indivíduo.
+
+![](resultados/output_same_person.jpg)
+
+---
+
+### Análise de Expressões Emocionais + Detecção de Atividades
+
+**Pessoa feliz e gesticulando**  
+![](resultados/output_bye.jpg)
+
+**Pessoa surpresa**  
+![](resultados/output_surprised.jpg)
+
+---
+
+### Geração de resumo
 ```
-Processando frames: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 753/753 [11:14<00:00,  1.12it/s]
+Processando frames: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 753/753 [25:27<00:00,  2.03s/it]
 
 ===== RESUMO =====
 Total de frames analisados: 753
 Quantidade de indivíduos únicos detectados: 3
 
  - Pessoa 1
-   Última atividade: Parado
-   Histórico de atividade: ['Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado']
+   Atividade mais frequente: Parado
    Última emoção detectada: happy
    Mudanças bruscas de emoção: 0
 
 
  - Pessoa 2
-   Última atividade: Parado
-   Histórico de atividade: ['Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado']
+   Atividade mais frequente: Parado
    Última emoção detectada: happy
    Mudanças bruscas de emoção: 3
 
 
  - Pessoa 3
-   Última atividade: Parado
-   Histórico de atividade: ['Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado', 'Parado']
+   Atividade mais frequente: Parado
    Última emoção detectada: neutral
    Mudanças bruscas de emoção: 2
+
 ```
 
-### Saída final
